@@ -1,0 +1,25 @@
+{
+  "name": "sales-sync-server",
+  "version": "1.0.0",
+  "description": "Backend server for syncing sales, consultations, goals, and schedules",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^0.36.0",
+    "@trpc/server": "^10.44.0",
+    "hono": "^3.11.0",
+    "pg": "^8.11.0",
+    "zod": "^3.22.4",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2",
+    "@types/node": "^20.4.2"
+  },
+  "type": "module"
+}
